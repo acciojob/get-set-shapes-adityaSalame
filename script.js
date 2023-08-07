@@ -3,6 +3,7 @@ class Rectangle {
 	constructor(width,height){
 		this.w=width;
 		this.h=height;
+		if(height==null) this.h=width;
 	}
 
 	get width(){
@@ -23,7 +24,7 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-	this.height(this.w);
+	
 	getPerimeter(){
 		return 4*this.w;
 	}
