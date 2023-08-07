@@ -9,6 +9,10 @@ class Rectangle {
 		return this.w;
 	}
 
+	set height(val){
+		this.h=val;
+	}
+
 	get height(){
 		return this.h;
 	}
@@ -19,7 +23,7 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-	this.w=this.h;
+	this.height(this.w);
 	getPerimeter(){
 		return 4*this.w;
 	}
