@@ -19,6 +19,7 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
+	this.w=this.h;
 	getPerimeter(){
 		return 4*this.w;
 	}
